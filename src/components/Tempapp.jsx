@@ -1,6 +1,11 @@
 import { useEffect } from "react";
 import { useState } from "react";
 
+import rain from "../images/rain.jpg";
+import sunny from "../images/sunny.jpg";
+import clouds from "../images/clouds.webp";
+import haze from "../images/haze.webp";
+
 const Tempapp = () => {
   const [city, setCity] = useState(null);
   const [weather, setWeather] = useState(null);
@@ -21,13 +26,13 @@ const Tempapp = () => {
   }, [search]);
   console.log(weather);
   if (weather === "Clouds") {
-    imgPath = "../images/clouds.webp";
+    imgPath = clouds;
   } else if (weather === "Haze") {
-    imgPath = "../images/haze.webp";
+    imgPath = haze;
   } else if (weather === "Rain") {
-    imgPath = "../images/rain.jpg";
+    imgPath = rain;
   } else {
-    imgPath = "../images/sunny.jpg";
+    imgPath = sunny;
   }
 
   return (
