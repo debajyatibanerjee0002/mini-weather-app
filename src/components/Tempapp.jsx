@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { useState } from "react";
 
-import rain from "../images/rain.jpg";
-import sunny from "../images/sunny.jpg";
-import clouds from "../images/clouds.webp";
-import haze from "../images/haze.webp";
+import rain from "../assets/rain.jpg";
+import sunny from "../assets/sunny.jpg";
+import clouds from "../assets/clouds.webp";
+import haze from "../assets/haze.webp";
 
 const Tempapp = () => {
   const [city, setCity] = useState(null);
