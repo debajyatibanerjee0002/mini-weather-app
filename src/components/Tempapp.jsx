@@ -21,13 +21,13 @@ const Tempapp = () => {
   }, [search]);
   console.log(weather);
   if (weather === "Clouds") {
-    imgPath = "/clouds.webp";
+    imgPath = "../images/clouds.webp";
   } else if (weather === "Haze") {
-    imgPath = "/haze.webp";
+    imgPath = "../images/haze.webp";
   } else if (weather === "Rain") {
-    imgPath = "/rain.jpg";
+    imgPath = "../images/rain.jpg";
   } else {
-    imgPath = "/sunny.jpg";
+    imgPath = "../images/sunny.jpg";
   }
 
   return (
